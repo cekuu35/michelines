@@ -28,7 +28,7 @@ if (!SERVICE_ROLE_KEY || !SERVICE_ROLE_KEY.startsWith("eyJ")) {
 // Service role key corrigida (sem o 'l' inicial)
 const FINAL_KEY = SERVICE_ROLE_KEY.startsWith("eyJ")
   ? SERVICE_ROLE_KEY
-  : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNieW53enhhbHpjYW93bm5vdXdwIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3OTQ5MDc3MCwiZXhwIjoyMDk1MDY2NzcwfQ.4UZdGNXXqznuV-vid1wtao_YGaIfbqpGkR_9ezrxb9Y"
+  : ""
 
 // Service role client — bypass de RLS completo
 const supabase = createClient(SUPABASE_URL, FINAL_KEY, {
